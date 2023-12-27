@@ -1,0 +1,64 @@
+# Nessus Scan Report
+
+## Scan Information
+
+- **Start time:** Tue Oct 18 16:20:29 2022
+- **End time:** Tue Oct 18 16:39:22 2022
+
+## Host Information
+
+- **Netbios Name:** METASPLOITABLE
+- **IP:** 192.168.182.131
+- **MAC Address:** 00:0C:29:0B:F9:0B
+- **OS:** Linux Kernel 2.6 on Ubuntu 8.04 (hardy)
+
+## Vulnerabilities
+
+### 1. Apache Tomcat AJP Connector Request Injection (Ghostcat)
+
+- **Synopsis:** Vulnerable AJP connector listening on the remote host.
+- **Description:** A file read/inclusion vulnerability was found in the AJP connector, allowing a remote, unauthenticated attacker to read web application files or gain remote code execution.
+- **Solution:** Update the AJP configuration to require authorization and/or upgrade the Tomcat server to 7.0.100, 8.5.51, 9.0.31, or later.
+- **Risk Factor:** High
+- **CVSS v3.0 Base Score:** 9.8
+
+### 2. Bind Shell Backdoor Detection
+
+- **Synopsis:** The remote host may have been compromised.
+- **Description:** A shell is listening on the remote port without authentication, posing a critical risk.
+- **Solution:** Verify if the remote host has been compromised and reinstall the system if necessary.
+- **Risk Factor:** Critical
+- **CVSS v3.0 Base Score:** 9.8
+
+### 3. Debian OpenSSH/OpenSSL Package Random Number Generator Weakness
+
+#### 3.1 SSH Host Keys Weakness
+
+- **Synopsis:** The remote SSH host keys are weak.
+- **Description:** The remote SSH host key has been generated on a Debian or Ubuntu system with a weak random number generator, allowing an attacker to decipher the remote session or set up a man-in-the-middle attack.
+- **Solution:** Regenerate all cryptographic material on the remote host.
+- **Risk Factor:** Critical
+- **CVSS v2.0 Base Score:** 10.0
+
+#### 3.2 SSL Certificate Weak Key
+
+- **Synopsis:** The remote SSL certificate uses a weak key.
+- **Description:** The remote x509 certificate on the remote SSL server has been generated on a Debian or Ubuntu system with a weak random number generator, allowing an attacker to decipher the remote session or set up a man-in-the-middle attack.
+- **Solution:** Regenerate all cryptographic material on the remote host.
+- **Risk Factor:** Critical
+- **CVSS v2.0 Base Score:** 10.0
+
+## Additional Information
+
+- For detailed information and remediation steps, refer to the Nessus report and provided references.
+
+## Contributing
+
+If you identify false positives, have additional insights, or want to contribute to the remediation efforts, please refer to [CONTRIBUTING.md] for details.
+
+## License
+
+This project is licensed under the [License Name] License - see the [LICENSE.md] file for details.
+
+---
+**Note:** Replace placeholder values such as `[CONTRIBUTING.md]`, `[License Name]`, and `[LICENSE.md]` with your actual information.
