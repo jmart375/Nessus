@@ -14,7 +14,7 @@ Nessus is an open-source vulnerability scanner designed to identify and address 
  
 # Scan Execution Guide
 
-<img src="https://imgur.com/cPDzCwf.png" height="30%" width="30%" alt="VirtualBox"/>
+<img src="https://imgur.com/cPDzCwf.png" height="45%" width="45%" alt="VirtualBox"/>
 
 ## Set Up Environment
 
