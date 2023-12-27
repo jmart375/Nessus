@@ -1,6 +1,6 @@
 # Nessus Software Project
 
-![Nessus Logo](link-to-logo.png)
+  ![Nessus Logo](https://imgur.com/9N8N0sm.png)
 
 ## Overview
 
