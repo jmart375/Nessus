@@ -12,6 +12,10 @@ Nessus is an open-source vulnerability scanner designed to identify and address 
   - Extensive reporting capabilities
   - Support for compliance checks
  
+<h2>Environments Used </h2>
+
+- <b>Oracle VM VirtualBox</b> (x86)
+ 
 # Scan Execution Guide
 
 <img src="https://imgur.com/cPDzCwf.png" height="45%" width="45%" alt="VirtualBox"/>
